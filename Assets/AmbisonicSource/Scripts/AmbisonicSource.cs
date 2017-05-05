@@ -169,4 +169,40 @@ public class AmbisonicSource : MonoBehaviour {
         clip.GetData(data, 0);
         speaker.SetData(data, clip.frequency);
     }
+
+    public void Pause() {
+        speaker.Pause();
+    }
+
+    public void Play() {
+        speaker.Play();
+    }
+
+    public void PlayDelayed(float delay) {
+        speaker.PlayDelayed(delay);
+    }
+
+    public void PlayOneShot(AudioClip clip, float volumeScale = 1.0f) {
+        speaker.PlayOneShot(clip, volumeScale);
+    }
+
+    public void PlayScheduled(double time) {
+        speaker.PlayScheduled(time);
+    }
+
+    public void SetScheduledEndTime(double time) {
+        speaker.SetScheduledEndTime(time);
+    }
+
+    public void SetScheduledStartTime(double time) {
+        speaker.SetScheduledStartTime(time);
+    }
+
+    public void Stop() {
+        speaker.Stop();
+    }
+
+    public void UnPause() {
+        speaker.UnPause();
+    }
 }
