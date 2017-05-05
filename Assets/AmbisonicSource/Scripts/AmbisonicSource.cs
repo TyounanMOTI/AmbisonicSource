@@ -8,7 +8,7 @@ public class AmbisonicSource : MonoBehaviour {
     AudioClip _clip;
     public AudioClip clip {
         get { return _clip; }
-        private set {
+        set {
             _clip = value;
             LoadClip();
         }
